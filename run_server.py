@@ -9,6 +9,8 @@ import camelot
 from io import StringIO
 import codecs
 import json
+from loadnews import NewsMySql
+from pprint import pprint
 
 ALLOWED_EXTENSIONS = {'pdf'}
 
@@ -28,6 +30,8 @@ app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = 10 * 1024 * 1024
 app.secret_key = b'bootstrap'
 
+''''''
+
 @app.route('/insert', methods=['GET'])
 def insert():
 	print('@@@ call insert')
@@ -46,10 +50,28 @@ def add_numbers():
 	return jsonify(result=file.read())
 	#return jsonify(result='<html><head><title>AJAX Loaded Title</title></head><body>It works!</body></html>')
 
+''''''
+
 @app.route('/')
 def index():
 	#return render_template('test.html', result='')
-	return render_template('index_blog_home.html')
+	service = NewsMySql()
+	json = service.loadNews()
+	#pprint(json['results'])
+
+	list = []
+	# 1. 이미지 썸네일, 2. 헤드라인, 3. 설명, 4. 포스트 날짜 및 출처, 5. detail url
+	if(json['status'] == '200'):
+		list = json['results']
+	return render_template('index_blog_home.html', listhtml=list)
+
+	'''
+	{'description': '후베이성 사망자 중복 계산... 전문가 &quot;일관성 있는 기준 필요&quot;',                                                                                                                                             'image': 'http://ojsfile.ohmynews.com/CT_T_IMG/2020/0214/IE002603159_LT.jpg',                                                                                                                                                 'link': 'https://news.google.com/__i/rss/rd/articles/CBMiQ2h0dHA6Ly93d3cub2hteW5ld3MuY29tL05XU19XZWIvVmlldy9hdF9wZy5hc3B4P0NOVE5fQ0Q9QTAwMDI2MTIyMjLSAUFodHRwOi8vbS5vaG15bmV3cy5jb20vTldTX1dlYi9Nb2JpbGUvYW1wLmFzcHg_Q05UTl9DRD1BMDAwMjYxMjIyMg?oc=5',                                                                                                                                                                                                                 'media': None,                                                                                                                                                                                                               'site': '',                                                                                                                                                                                                                   'site_name': '오마이뉴스',                                                                                                                                                                                                     'sno': 65,                                                                                                                                                                                                                   'title': "중국 '코로나19' 사망 121명·확진 5천 명 증가, 통계 '갈팡질팡' - 오마이뉴스",                                                                                                                                                 'type': 'article',                                                                                                                                                                                                           'url': 'http://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002612222'}]
+	'''
+	
+	
+	return render_template('index_blog_home.html', listHtml = ['가','나','다'])	
+	#return render_template('index_blog_home.html', listHtml = list)
 	#return render_template('index_form.html')
 
 @app.route('/uploads/<error>')

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="kr">
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -47,21 +46,21 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Home
+						<a class="nav-link" href="#" id=home>Home
 							<span class="sr-only">(current)</span>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#" id=calculate>calculate</a>
+						<a class="nav-link" href="#" id=news>News</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/insert">About</a>
+						<a class="nav-link" href="#" id=utils>Utils</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Services</a>
+						<a class="nav-link" href="#" id=laboratory>Laboratory</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
+						<a class="nav-link" href="#" id=contact>Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -70,47 +69,33 @@
 
 	<!-- Page Content -->
 	<div class="container">
-
 		<div class="row">
-
 			<!-- Blog Entries Column -->
 			<div class="col-md-8">
 
-				<h1 class="my-4">Page Heading
-					<small>Secondary Text</small>
+				<h1 class="my-4">구글 최근 뉴스
+					<small>헤드라인</small>
 				</h1>
 
+				{% for item in listhtml %}
 				<!-- Blog Post -->
-				<div class="card mb-4">
-					<img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+				<div class="card mb-4" id="post1">
+					<img class="card-img-top" src={{item['image']}} alt="Card image cap"  style="height:300px">
 					<div class="card-body">
-						<h2 class="card-title">Post Title</h2>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-						<a href="#" class="btn btn-primary">Read More &rarr;</a>
+						<h2 class="card-title">{{item['title']}}</h2>
+						<!-- <p class="card-text">{{item['description']}}</p> -->
+						<a href={{item['url']}} class="btn btn-primary">Read More &rarr;</a>
 					</div>
 					<div class="card-footer text-muted">
-						Posted on January 1, 2017 by
-						<a href="#">Start Bootstrap</a>
-												 <div id="message">The default contents of the message</div>
+						{{item['site_name']}} by
+						<a href='https://news.google.com' target="_blank">news.google.com</a>
+						<!-- <div id="message">The default contents of the message</div> -->
 					</div>
 				</div>
 
 				<!-- Blog Post -->
-				<div class="card mb-4">
-					<img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
-					<div class="card-body">
-						<h2 class="card-title">Post Title</h2>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-						<a href="#" class="btn btn-primary">Read More &rarr;</a>
-					</div>
-					<div class="card-footer text-muted">
-						Posted on January 1, 2017 by
-						<a href="#">Start Bootstrap</a>
-					</div>
-				</div>
-
-				<!-- Blog Post -->
-				<div class="card mb-4">
+				<!--
+				<div class="card mb-4" id="post2">
 					<img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
 					<div class="card-body">
 						<h2 class="card-title">Post Title</h2>
@@ -122,7 +107,24 @@
 						<a href="#">Start Bootstrap</a>
 					</div>
 				</div>
-
+-->
+				<!-- Blog Post -->
+				<!--
+				<div class="card mb-4" id="post3">
+					<img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+					<div class="card-body">
+						<h2 class="card-title">Post Title</h2>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+						<a href="#" class="btn btn-primary">Read More &rarr;</a>
+					</div>
+					<div class="card-footer text-muted">
+						Posted on January 1, 2017 by
+						<a href="#">Start Bootstrap</a>
+					</div>
+				</div>
+-->
+				{% endfor %}
+				
 				<!-- Pagination -->
 				<ul class="pagination justify-content-center mb-4">
 					<li class="page-item">
@@ -143,7 +145,7 @@
 					<h5 class="card-header">Search</h5>
 					<div class="card-body">
 						<div class="input-group">
-							<input type="text" class="form-control" placeholder="Search for...">
+							<input type="text" class="form-control" placeholder="미구현">
 							<span class="input-group-btn">
 								<button class="btn btn-secondary" type="button">Go!</button>
 							</span>
@@ -205,7 +207,7 @@
 	<!-- Footer -->
 	<footer class="py-5 bg-dark">
 		<div class="container">
-			<p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+			<p class="m-0 text-center text-white">Copyright &copy; makuvex7@gmail.com</p>
 		</div>
 		<!-- /.container -->
 	</footer>
