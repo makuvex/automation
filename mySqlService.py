@@ -26,7 +26,7 @@ class mySqlService:
         print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ insert')
         #v = json['site']
         #print(f'@@@ insert {v}')
-        sql = f"""insert into {preference.table_name}(description, image, link, media, site, site_name, title, type, url) values (%s, %s, %s, %s, %s, %s, %s, %s, %s)"""
+        sql = f"""insert into {preference.table_name}(description, image, link, media, site, site_name, title, date, url) values (%s, %s, %s, %s, %s, %s, %s, %s, %s)"""
         self.cur.execute(sql, (json['description'] if 'description' in json else "", 
 							   json['image'] if 'image' in json else "", 
 							   json['link'] if 'link' in json else "", 
@@ -34,7 +34,7 @@ class mySqlService:
 							   json['site'] if 'site' in json else "", 
 							   json['site_name'] if 'site_name' in json else "",
 							   json['title'] if 'title' in json else "",
-							   json['type'] if 'type' in json else "",
+							   json['date'] if 'date' in json else "",
 							   json['url'] if 'url' in json else ""))
         self.con.commit()
 
@@ -57,17 +57,17 @@ class mySqlService:
         result = self.cur.fetchone()
         return result != None
 
-    def selectWithIndex(self, lastIndex = 0, count = 3):
+    def selectWithDate(self, lastIndex = 0, count = 3):
         if(lastIndex == 0):
-            sql = "select * from " + preference.table_name + " ORDER BY sno DESC LIMIT " + str(count)
+            sql = "select * from " + preference.table_name + " ORDER BY date DESC LIMIT " + str(count)
         else:
-            sql = "select * from " + preference.table_name + " WHERE sno < " + str(lastIndex) + " ORDER BY sno DESC LIMIT " + str(count)
+            sql = "select * from " + preference.table_name + " WHERE sno < " + str(lastIndex) + " ORDER BY date DESC LIMIT " + str(count)
 			
         #print(f'sql selectWithIndex {sql}')
         self.cur.execute(sql)
         rows = self.cur.fetchall()
         
-        pprint(f'fetch result {rows}')
+        #pprint(f'fetch result {rows}')
         resultJson = {'status': '200', 'results': None}
         
         if(len(rows) == 0):
@@ -84,7 +84,7 @@ class mySqlService:
 						  'site': row[5],
 						  'site_name': row[6],
 						  'title': row[7],
-						  'type': row[8],
+						  'date': row[8],
 						  'url': row[9]})
             i += 1
         #print(f'count {len(array)}')
@@ -111,7 +111,7 @@ class mySqlService:
 						  'site': row[5],
 						  'site_name': row[6],
 						  'title': row[7],
-						  'type': row[8],
+						  'date': row[8],
 						  'url': row[9]})
             i += 1
 

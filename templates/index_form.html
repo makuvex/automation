@@ -1,12 +1,89 @@
-{% extends "layout.html" %}
-{% block body %}
-	<html>
-		<body>
-			<h1>PDF의 테이블을 EXCEL 파일로 변환하는 페이지입니다.</h1>
-			<form action="/file_uploaded" method="POST" enctype="multipart/form-data">
-				<input type="file" name="file_upload" />
-				<input type="submit" value="변환"/>
-			</form>
-		</body>
-	</html>
+{% extends "layout.html" %} {% block body %}
+<html>
+
+<head>
+	<link href="{{url_for('static', filename='css/progress-circle.css')}}" rel="stylesheet">
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+	<script type=text/javascript>
+		$(function() {
+			$("#convert").on("click", function(e) {
+				var tag = '<div class="sonar-wrapper"> \
+								<div class="sonar-emitter">	\
+									<div class="sonar-wave"></div> \
+								</div> \
+							</div>';
+				
+				$("#progress").append(tag)
+				
+				//e.preventDefault();
+				var form = $('#fileUploadForm')[0];
+				var data = new FormData(form);
+				$("#convert").prop("disabled", true);
+				
+				$.ajax({
+					type: "POST",
+					enctype: 'multipart/form-data',
+					url: "/file_uploaded",
+					data: data,
+					processData: false,
+					contentType: false,
+					cache: false,
+					timeout: 600000,
+					success: function (res) {
+						$("#convert").prop("disabled", false);
+						$(".sonar-wrapper").remove();
+						//console.log('res %s', res);
+						//window.location='./xlsx_file_download/'+res;
+						document.location.assign('./xlsx_file_download/'+res);
+					},
+					error: function (e) {
+						console.log("ERROR : ", e);
+						$("#convert").prop("disabled", false);
+						$(".sonar-wrapper").remove();
+						alert("fail");
+					}
+				});
+				
+				/*
+				$.getJSON('/_add_numbers', {
+					a: 1,
+					b: 2
+				}, function(data) {
+					//$("#result").text(data.result);
+					//alert(data.result)
+					$("#message").html(data.result)
+				});
+				*/
+				return false;
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<h1>PDF의 테이블을 EXCEL 파일로 변환하는 페이지입니다.</h1>
+	<form id="fileUploadForm" method="POST" enctype="multipart/form-data">
+		<input type="file" name="file_upload" />
+		<input type="submit" value="변환" id="convert" />
+	</form>
+	<div id="progress">
+		
+	</div>
+	
+	<!--
+	<form action="/file_uploaded" method="POST" enctype="multipart/form-data">
+		<input type="file" name="file_upload" />
+		<input type="submit" value="변환" />
+	</form>
+	{% if progress is defined %}
+		<div class="sonar-wrapper">
+			<div class="sonar-emitter">
+				<div class="sonar-wave"></div>
+			</div>
+		</div>
+	{% endif %}
+-->
+</body>
+
+</html>
 {% endblock %}

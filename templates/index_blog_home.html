@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="kr">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script> 
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
 	<script type=text/javascript>
 		$(function() {
-			$("#calculate").on("click", function(e){ 
+			$("#calculate").on("click", function(e) {
 				$.getJSON('/_add_numbers', {
 					a: 1,
 					b: 2
@@ -76,55 +77,30 @@
 				<h1 class="my-4">구글 최근 뉴스
 					<small>헤드라인</small>
 				</h1>
+				<div class="row">
 
-				{% for item in listhtml %}
-				<!-- Blog Post -->
-				<div class="card mb-4" id="post1">
-					<img class="card-img-top" src={{item['image']}} alt="Card image cap"  style="height:300px">
-					<div class="card-body">
-						<h2 class="card-title">{{item['title']}}</h2>
-						<!-- <p class="card-text">{{item['description']}}</p> -->
-						<a href={{item['url']}} class="btn btn-primary">Read More &rarr;</a>
+					{% for item in listhtml %}
+					<div class="col-lg-4 col-sm-6 mb-4">
+						<div class="card h-100">
+							<a href={{item[ 'url']}}>
+								<img class="card-img-top" src={{item[ 'image']}} alt="">
+							</a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href={{item[ 'url']}}>{{item['title']}}</a>
+								</h4>
+								<p class="card-text">
+									{{item['site_name']}} by
+									<a href='https://news.google.com' target="_blank">news.google.com</a>
+									<div id="message">{{item['date']}}</div>
+								</p>
+							</div>
+						</div>
 					</div>
-					<div class="card-footer text-muted">
-						{{item['site_name']}} by
-						<a href='https://news.google.com' target="_blank">news.google.com</a>
-						<!-- <div id="message">The default contents of the message</div> -->
-					</div>
-				</div>
-
-				<!-- Blog Post -->
-				<!--
-				<div class="card mb-4" id="post2">
-					<img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
-					<div class="card-body">
-						<h2 class="card-title">Post Title</h2>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-						<a href="#" class="btn btn-primary">Read More &rarr;</a>
-					</div>
-					<div class="card-footer text-muted">
-						Posted on January 1, 2017 by
-						<a href="#">Start Bootstrap</a>
-					</div>
-				</div>
--->
-				<!-- Blog Post -->
-				<!--
-				<div class="card mb-4" id="post3">
-					<img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
-					<div class="card-body">
-						<h2 class="card-title">Post Title</h2>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-						<a href="#" class="btn btn-primary">Read More &rarr;</a>
-					</div>
-					<div class="card-footer text-muted">
-						Posted on January 1, 2017 by
-						<a href="#">Start Bootstrap</a>
-					</div>
-				</div>
--->
-				{% endfor %}
+					{% endfor %}
 				
+				</div>
+				<!-- /.row -->
 				<!-- Pagination -->
 				<ul class="pagination justify-content-center mb-4">
 					<li class="page-item">
@@ -197,9 +173,7 @@
 				</div>
 
 			</div>
-
 		</div>
-		<!-- /.row -->
 
 	</div>
 	<!-- /.container -->

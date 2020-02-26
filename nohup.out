@@ -1,0 +1,62 @@
+[2020-02-16 16:55:03,791][INFO|_internal.py:122] >>  * Running on http://0.0.0.0:5002/ (Press CTRL+C to quit)
+[2020-02-16 16:55:03,792][INFO|_internal.py:122] >>  * Restarting with stat
+[2020-02-16 16:55:06,685][WARNING|_internal.py:122] >>  * Debugger is active!
+[2020-02-16 16:55:06,694][INFO|_internal.py:122] >>  * Debugger PIN: 439-056-591
+[2020-02-16 16:55:06,709][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:55:06] "[37mGET /pdf HTTP/1.1[0m" 200 -
+[2020-02-16 16:55:07,602][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:55:07] "[37mGET /pdf HTTP/1.1[0m" 200 -
+[2020-02-16 16:55:16,000][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:55:16] "[37mPOST /file_uploaded HTTP/1.1[0m" 200 -
+[2020-02-16 16:55:51,299][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:55:51] "[37mGET /pdf HTTP/1.1[0m" 200 -
+[2020-02-16 16:56:00,512][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:56:00] "[37mPOST /file_uploaded HTTP/1.1[0m" 200 -
+[2020-02-16 16:56:40,985][INFO|_internal.py:122] >>  * Detected change in '/workspace/bootstrap_4.4.1/run_server.py', reloading
+@@@ call convert_pdf
+@@@ call convert_pdf
+@@@ file {<FileStorage: '1.pdf' ('application/pdf')>}
+@@@ ALLOWED_EXTENSIONS {True}
+@@@ makefilename 121.166.15.230_1.xlsx
+@@@ call convert_pdf
+@@@ file {<FileStorage: '1.pdf' ('application/pdf')>}
+@@@ ALLOWED_EXTENSIONS {True}
+@@@ makefilename 121.166.15.230_1.xlsx
+[2020-02-16 16:56:41,292][INFO|_internal.py:122] >>  * Restarting with stat
+[2020-02-16 16:56:43,997][WARNING|_internal.py:122] >>  * Debugger is active!
+[2020-02-16 16:56:44,008][INFO|_internal.py:122] >>  * Debugger PIN: 439-056-591
+[2020-02-16 16:56:45,889][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:56:45] "[37mGET /pdf HTTP/1.1[0m" 200 -
+[2020-02-16 16:56:45,892][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:56:45] "[37mGET /pdf HTTP/1.1[0m" 200 -
+[2020-02-16 16:56:51,801][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:56:51] "[37mPOST /file_uploaded HTTP/1.1[0m" 200 -
+[2020-02-16 16:57:18,900][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:57:18] "[37mPOST /file_uploaded HTTP/1.1[0m" 200 -
+[2020-02-16 16:58:06,270][INFO|_internal.py:122] >>  * Detected change in '/workspace/bootstrap_4.4.1/run_server.py', reloading
+@@@ call convert_pdf
+@@@ call convert_pdf
+@@@ file {<FileStorage: '1.pdf' ('application/pdf')>}
+@@@ ALLOWED_EXTENSIONS {True}
+@@@ makefilename 121.166.15.230_1.xlsx
+@@@ file {<FileStorage: '2.pdf' ('application/pdf')>}
+@@@ ALLOWED_EXTENSIONS {True}
+@@@ makefilename 121.166.15.230_2.xlsx
+[2020-02-16 16:58:06,600][INFO|_internal.py:122] >>  * Restarting with stat
+[2020-02-16 16:58:09,396][WARNING|_internal.py:122] >>  * Debugger is active!
+[2020-02-16 16:58:09,405][INFO|_internal.py:122] >>  * Debugger PIN: 439-056-591
+[2020-02-16 16:58:29,779][INFO|_internal.py:122] >>  * Detected change in '/workspace/bootstrap_4.4.1/run_server.py', reloading
+[2020-02-16 16:58:29,998][INFO|_internal.py:122] >>  * Restarting with stat
+[2020-02-16 16:58:32,599][WARNING|_internal.py:122] >>  * Debugger is active!
+[2020-02-16 16:58:32,599][WARNING|_internal.py:122] >>  * Debugger is active!
+[2020-02-16 16:58:32,607][INFO|_internal.py:122] >>  * Debugger PIN: 439-056-591
+[2020-02-16 16:58:32,607][INFO|_internal.py:122] >>  * Debugger PIN: 439-056-591
+[2020-02-16 16:59:07,573][INFO|_internal.py:122] >>  * Detected change in '/workspace/bootstrap_4.4.1/run_server.py', reloading
+[2020-02-16 16:59:07,573][INFO|_internal.py:122] >>  * Detected change in '/workspace/bootstrap_4.4.1/run_server.py', reloading
+[2020-02-16 16:59:07,810][INFO|_internal.py:122] >>  * Restarting with stat
+[2020-02-16 16:59:10,604][WARNING|_internal.py:122] >>  * Debugger is active!
+[2020-02-16 16:59:10,604][WARNING|_internal.py:122] >>  * Debugger is active!
+[2020-02-16 16:59:10,613][INFO|_internal.py:122] >>  * Debugger PIN: 439-056-591
+[2020-02-16 16:59:10,613][INFO|_internal.py:122] >>  * Debugger PIN: 439-056-591
+[2020-02-16 16:59:11,793][INFO|_internal.py:122] >>  * Detected change in '/workspace/bootstrap_4.4.1/run_server.py', reloading
+[2020-02-16 16:59:11,793][INFO|_internal.py:122] >>  * Detected change in '/workspace/bootstrap_4.4.1/run_server.py', reloading
+[2020-02-16 16:59:12,095][INFO|_internal.py:122] >>  * Restarting with stat
+[2020-02-16 16:59:14,789][WARNING|_internal.py:122] >>  * Debugger is active!
+[2020-02-16 16:59:14,789][WARNING|_internal.py:122] >>  * Debugger is active!
+[2020-02-16 16:59:14,799][INFO|_internal.py:122] >>  * Debugger PIN: 439-056-591
+[2020-02-16 16:59:14,799][INFO|_internal.py:122] >>  * Debugger PIN: 439-056-591
+[2020-02-16 16:59:23,623][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:59:23] "[37mGET /pdf HTTP/1.1[0m" 200 -
+[2020-02-16 16:59:23,623][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:59:23] "[37mGET /pdf HTTP/1.1[0m" 200 -
+[2020-02-16 16:59:34,295][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:59:34] "[37mPOST /file_uploaded HTTP/1.1[0m" 200 -
+[2020-02-16 16:59:34,295][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:59:34] "[37mPOST /file_uploaded HTTP/1.1[0m" 200 -
