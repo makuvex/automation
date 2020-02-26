@@ -76,9 +76,11 @@ class mySqlService:
         array = []
         i = 0
         for row in rows:
+            img = row[2].split('=-p')[0]
+            #print('@@@ row[2] %s\n img %s'%(row[2], img))
             array.append({'sno': row[0], 
                           'description': row[1],
-                          'image': row[2],
+                          'image': img if img != None else row[2],
                           'link': row[3],
                           'media': row[4],
 						  'site': row[5],
@@ -103,9 +105,11 @@ class mySqlService:
         array = []
         i = 0
         for row in rows:
+            img = row[2].split('=-p')[0]
+            #print('@@@ row[2] %s\n img %s'%(row[2], img))
             array.append({'sno': row[0], 
                           'description': row[1],
-                          'image': row[2],
+                          'image': img if img != None else row[2],
                           'link': row[3],
                           'media': row[4],
 						  'site': row[5],
@@ -118,9 +122,7 @@ class mySqlService:
         return {'status': '200', 'results': array}
         
         
-'''
-+-------------+--------------+------+-----+---------+----------------+                                                                                                                                                         | Field       | Type         | Null | Key | Default | Extra          |                                                                                                                                                         +-------------+--------------+------+-----+---------+----------------+                                                                                                                                                         | sno         | int(11)      | NO   | PRI | NULL    | auto_increment |                                                                                                                                                         | description | varchar(255) | YES  |     | NULL    |                |                                                                                                                                                         | image       | varchar(255) | YES  |     | NULL    |                |                                                                                                                                                         | link        | varchar(255) | YES  |     | NULL    |                |                                                                                                                                                         | media       | varchar(255) | YES  |     | NULL    |                |                                                                                                                                                         | site        | varchar(255) | YES  |     | NULL    |                |                                                                                                                                                         | site_name   | varchar(255) | YES  |     | NULL    |                |                                                                                                                                                         | title       | varchar(255) | YES  |     | NULL    |                |                                                                                                                                                         | type        | varchar(255) | YES  |     | NULL    |                |                                                                                                                                                         | url         | varchar(255) | YES  |     | NULL    |                |                                                                                                                                                         +-------------+--------------+------+-----+---------+----------------+     
-'''    
-
-        
+if __name__ == "__main__":
+	sql = mySqlService()
+	pprint(sql.selectWithDate(3))
         

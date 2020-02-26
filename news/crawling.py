@@ -57,6 +57,7 @@ def crawling():
 				time = utcToKst(time)
 				#2020-02-15T06:29:04Z
 				img = article.parent.find('figure').find('img').get('src')
+				
 				print('@@@@@ link %s\n, title %s\n, img %s\n, author %s\n, time %s'%(link, title, img, author, time))
 				#sql = f"""insert into {preference.table_name}(description, image, link, media, site, site_name, title, type, url) values (%s, %s, %s, %s, %s, %s, %s, %s, %s)"""
 				

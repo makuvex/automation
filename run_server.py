@@ -73,7 +73,8 @@ def index():
 	if(json['status'] == '200'):
 		list = json['results']
 	pprint(f'@@@ {list[0]}')
-	return render_template('index_blog_home.html', listhtml=list)
+	#return render_template('index_blog_home.html', listhtml=list)
+	return render_template('index_album.html', listhtml=list)
 
 @app.route('/uploads/<error>')
 def render_file(error):

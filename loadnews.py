@@ -6,7 +6,7 @@ class NewsMySql:
 	log = PyLog()
 	log = log.setHandler("ERROR")
 	sqlService = MySqlService()
-	query_count = 10
+	query_count = 21
 	
 	def __init__(self):
 		self.log.debug("__init__")
