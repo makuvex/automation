@@ -60,6 +60,13 @@ def convert_pdf():
 	return render_template('index_form.html')
 
 ''''''
+@app.route('/nemodeal')
+def nemo_policy():
+	return render_template('nemo_policy.html')
+
+@app.route('/nemodeal_aos_license')
+def nemo_license():
+	return render_template('nemo_license.html')
 
 @app.route('/')
 def index():
@@ -142,7 +149,7 @@ def upload_file():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5002, debug=True)
+    app.run(host='0.0.0.0', port=80, debug=True)
 
 
 #출처: https://qkqhxla1.tistory.com/901 [archives]
