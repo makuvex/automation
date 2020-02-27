@@ -19,15 +19,26 @@ def utcToKst(time):
 	try:
 		time_format = '%Y-%m-%dT%H:%M:%SZ'
 		nyc_dt_naive = datetime.strptime(time, time_format)
+
+
 		local_tz = pytz.timezone('Asia/Seoul')
 		local_dt = nyc_dt_naive.replace(tzinfo=pytz.utc).astimezone(local_tz)
 		return local_tz.normalize(local_dt)
-
+		'''
+		print('nyc_dt_naive %s'%nyc_dt_naive)
+		seoul = pytz.timezone('Asia/Seoul')
+		print('seoul %s'%seoul)
+		sf_dt = seoul.normalize(nyc_dt_naive.astimezone(seoul))
+		return sf_dt
+		'''
 		#2020-02-15T06:29:04Z
-		#print('@@@ input time %s'%time)
-		#to_zone = tz.gettz('Asia/Seoul')
-		#utc = datetime.strptime(time, '%Y-%m-%dT%H:%M:%SZ')
-		#return utc.astimezone(to_zone)
+		'''
+		to_zone = tz.gettz('Asia/Seoul')
+		print('to_zone %s'%to_zone)
+		utc = datetime.strptime(time, '%Y-%m-%dT%H:%M:%SZ')
+		print('utc %s'%utc)
+		return utc.astimezone(to_zone)
+		'''
 	except Exception as e:
 		print("=========== Errror %s ==========="%e)
 		return ""
@@ -89,7 +100,8 @@ def crawling():
 				#size += 1
 
 if __name__ == "__main__":
+	print(utcToKst('2020-02-15T06:29:04Z'))
 	#crawling()
-	PyScheduler().runInterval(crawling, 60*60)	#10분
+	#PyScheduler().runInterval(crawling, 60*60)	#10분
 
  

@@ -1,62 +1,105 @@
-[2020-02-16 16:55:03,791][INFO|_internal.py:122] >>  * Running on http://0.0.0.0:5002/ (Press CTRL+C to quit)
-[2020-02-16 16:55:03,792][INFO|_internal.py:122] >>  * Restarting with stat
-[2020-02-16 16:55:06,685][WARNING|_internal.py:122] >>  * Debugger is active!
-[2020-02-16 16:55:06,694][INFO|_internal.py:122] >>  * Debugger PIN: 439-056-591
-[2020-02-16 16:55:06,709][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:55:06] "[37mGET /pdf HTTP/1.1[0m" 200 -
-[2020-02-16 16:55:07,602][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:55:07] "[37mGET /pdf HTTP/1.1[0m" 200 -
-[2020-02-16 16:55:16,000][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:55:16] "[37mPOST /file_uploaded HTTP/1.1[0m" 200 -
-[2020-02-16 16:55:51,299][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:55:51] "[37mGET /pdf HTTP/1.1[0m" 200 -
-[2020-02-16 16:56:00,512][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:56:00] "[37mPOST /file_uploaded HTTP/1.1[0m" 200 -
-[2020-02-16 16:56:40,985][INFO|_internal.py:122] >>  * Detected change in '/workspace/bootstrap_4.4.1/run_server.py', reloading
-@@@ call convert_pdf
-@@@ call convert_pdf
-@@@ file {<FileStorage: '1.pdf' ('application/pdf')>}
-@@@ ALLOWED_EXTENSIONS {True}
-@@@ makefilename 121.166.15.230_1.xlsx
-@@@ call convert_pdf
-@@@ file {<FileStorage: '1.pdf' ('application/pdf')>}
-@@@ ALLOWED_EXTENSIONS {True}
-@@@ makefilename 121.166.15.230_1.xlsx
-[2020-02-16 16:56:41,292][INFO|_internal.py:122] >>  * Restarting with stat
-[2020-02-16 16:56:43,997][WARNING|_internal.py:122] >>  * Debugger is active!
-[2020-02-16 16:56:44,008][INFO|_internal.py:122] >>  * Debugger PIN: 439-056-591
-[2020-02-16 16:56:45,889][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:56:45] "[37mGET /pdf HTTP/1.1[0m" 200 -
-[2020-02-16 16:56:45,892][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:56:45] "[37mGET /pdf HTTP/1.1[0m" 200 -
-[2020-02-16 16:56:51,801][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:56:51] "[37mPOST /file_uploaded HTTP/1.1[0m" 200 -
-[2020-02-16 16:57:18,900][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:57:18] "[37mPOST /file_uploaded HTTP/1.1[0m" 200 -
-[2020-02-16 16:58:06,270][INFO|_internal.py:122] >>  * Detected change in '/workspace/bootstrap_4.4.1/run_server.py', reloading
-@@@ call convert_pdf
-@@@ call convert_pdf
-@@@ file {<FileStorage: '1.pdf' ('application/pdf')>}
-@@@ ALLOWED_EXTENSIONS {True}
-@@@ makefilename 121.166.15.230_1.xlsx
-@@@ file {<FileStorage: '2.pdf' ('application/pdf')>}
-@@@ ALLOWED_EXTENSIONS {True}
-@@@ makefilename 121.166.15.230_2.xlsx
-[2020-02-16 16:58:06,600][INFO|_internal.py:122] >>  * Restarting with stat
-[2020-02-16 16:58:09,396][WARNING|_internal.py:122] >>  * Debugger is active!
-[2020-02-16 16:58:09,405][INFO|_internal.py:122] >>  * Debugger PIN: 439-056-591
-[2020-02-16 16:58:29,779][INFO|_internal.py:122] >>  * Detected change in '/workspace/bootstrap_4.4.1/run_server.py', reloading
-[2020-02-16 16:58:29,998][INFO|_internal.py:122] >>  * Restarting with stat
-[2020-02-16 16:58:32,599][WARNING|_internal.py:122] >>  * Debugger is active!
-[2020-02-16 16:58:32,599][WARNING|_internal.py:122] >>  * Debugger is active!
-[2020-02-16 16:58:32,607][INFO|_internal.py:122] >>  * Debugger PIN: 439-056-591
-[2020-02-16 16:58:32,607][INFO|_internal.py:122] >>  * Debugger PIN: 439-056-591
-[2020-02-16 16:59:07,573][INFO|_internal.py:122] >>  * Detected change in '/workspace/bootstrap_4.4.1/run_server.py', reloading
-[2020-02-16 16:59:07,573][INFO|_internal.py:122] >>  * Detected change in '/workspace/bootstrap_4.4.1/run_server.py', reloading
-[2020-02-16 16:59:07,810][INFO|_internal.py:122] >>  * Restarting with stat
-[2020-02-16 16:59:10,604][WARNING|_internal.py:122] >>  * Debugger is active!
-[2020-02-16 16:59:10,604][WARNING|_internal.py:122] >>  * Debugger is active!
-[2020-02-16 16:59:10,613][INFO|_internal.py:122] >>  * Debugger PIN: 439-056-591
-[2020-02-16 16:59:10,613][INFO|_internal.py:122] >>  * Debugger PIN: 439-056-591
-[2020-02-16 16:59:11,793][INFO|_internal.py:122] >>  * Detected change in '/workspace/bootstrap_4.4.1/run_server.py', reloading
-[2020-02-16 16:59:11,793][INFO|_internal.py:122] >>  * Detected change in '/workspace/bootstrap_4.4.1/run_server.py', reloading
-[2020-02-16 16:59:12,095][INFO|_internal.py:122] >>  * Restarting with stat
-[2020-02-16 16:59:14,789][WARNING|_internal.py:122] >>  * Debugger is active!
-[2020-02-16 16:59:14,789][WARNING|_internal.py:122] >>  * Debugger is active!
-[2020-02-16 16:59:14,799][INFO|_internal.py:122] >>  * Debugger PIN: 439-056-591
-[2020-02-16 16:59:14,799][INFO|_internal.py:122] >>  * Debugger PIN: 439-056-591
-[2020-02-16 16:59:23,623][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:59:23] "[37mGET /pdf HTTP/1.1[0m" 200 -
-[2020-02-16 16:59:23,623][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:59:23] "[37mGET /pdf HTTP/1.1[0m" 200 -
-[2020-02-16 16:59:34,295][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:59:34] "[37mPOST /file_uploaded HTTP/1.1[0m" 200 -
-[2020-02-16 16:59:34,295][INFO|_internal.py:122] >> 121.166.15.230 - - [16/Feb/2020 16:59:34] "[37mPOST /file_uploaded HTTP/1.1[0m" 200 -
+python: can't open file 'crawling.py': [Errno 2] No such file or directory
+ * Serving Flask app "run_server" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+[2020-02-27 18:46:03,760][INFO|_internal.py:122] >>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+[2020-02-27 18:46:03,760][INFO|_internal.py:122] >>  * Restarting with stat
+[2020-02-27 18:46:05,059][WARNING|_internal.py:122] >>  * Debugger is active!
+[2020-02-27 18:46:05,060][INFO|_internal.py:122] >>  * Debugger PIN: 328-494-855
+[2020-02-27 18:46:17,506][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:46:17] "GET / HTTP/1.1" 200 -
+[2020-02-27 18:46:17,590][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:46:17] "GET /static/assets/js/vendor/popper.min.js HTTP/1.1" 200 -
+[2020-02-27 18:46:17,596][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:46:17] "GET /static/assets/js/vendor/holder.min.js HTTP/1.1" 200 -
+[2020-02-27 18:46:17,597][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:46:17] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+[2020-02-27 18:48:57,272][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:48:57] "GET /nemodeal_aos_license HTTP/1.1" 200 -
+[2020-02-27 18:49:04,074][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:49:04] "GET /nemodeal HTTP/1.1" 200 -
+[2020-02-27 18:49:04,098][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:49:04] "GET /static/css/style.css HTTP/1.1" 200 -
+[2020-02-27 18:54:31,464][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:54:31] "GET / HTTP/1.1" 200 -
+[2020-02-27 18:54:31,500][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:54:31] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+[2020-02-27 18:54:31,503][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:54:31] "GET /static/css/album.css HTTP/1.1" 200 -
+[2020-02-27 18:54:31,543][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:54:31] "GET /static/assets/js/vendor/popper.min.js HTTP/1.1" 200 -
+[2020-02-27 18:54:31,546][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:54:31] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+[2020-02-27 18:54:31,549][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:54:31] "GET /static/assets/js/vendor/holder.min.js HTTP/1.1" 200 -
+[2020-02-27 18:54:32,921][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:54:32] "GET /favicon.ico HTTP/1.1" 404 -
+[2020-02-27 18:54:51,102][INFO|_internal.py:122] >> 183.136.213.100 - - [27/Feb/2020 18:54:51] "GET / HTTP/1.1" 200 -
+[2020-02-27 18:54:51,726][INFO|_internal.py:122] >> 183.136.213.100 - - [27/Feb/2020 18:54:51] "GET /public/index.php HTTP/1.1" 404 -
+[2020-02-27 18:54:52,745][INFO|_internal.py:122] >> 183.136.213.100 - - [27/Feb/2020 18:54:52] "GET /public/index.php HTTP/1.1" 404 -
+[2020-02-27 18:54:56,078][INFO|_internal.py:122] >> 183.136.213.100 - - [27/Feb/2020 18:54:56] "GET /public/index.php HTTP/1.1" 404 -
+[2020-02-27 18:54:57,897][INFO|_internal.py:122] >> 183.136.213.100 - - [27/Feb/2020 18:54:57] "GET /index.php HTTP/1.1" 404 -
+[2020-02-27 18:54:59,281][INFO|_internal.py:122] >> 183.136.213.100 - - [27/Feb/2020 18:54:59] "GET /index.php HTTP/1.1" 404 -
+[2020-02-27 18:54:59,661][INFO|_internal.py:122] >> 183.136.213.100 - - [27/Feb/2020 18:54:59] "GET /index.php HTTP/1.1" 404 -
+[2020-02-27 18:55:00,290][INFO|_internal.py:122] >> 183.136.213.100 - - [27/Feb/2020 18:55:00] "GET /admin/index.php HTTP/1.1" 404 -
+[2020-02-27 18:55:00,609][INFO|_internal.py:122] >> 183.136.213.100 - - [27/Feb/2020 18:55:00] "GET /admin/index.php HTTP/1.1" 404 -
+[2020-02-27 18:55:00,949][INFO|_internal.py:122] >> 183.136.213.100 - - [27/Feb/2020 18:55:00] "GET /admin/index.php HTTP/1.1" 404 -
+[2020-02-27 19:06:15,197][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 19:06:15] "GET / HTTP/1.1" 200 -
+[2020-02-27 19:26:59,440][INFO|_internal.py:122] >> 151.73.227.121 - - [27/Feb/2020 19:26:59] "GET / HTTP/1.1" 200 -
+[2020-02-27 19:47:08,468][INFO|_internal.py:122] >> 61.219.11.153 - - [27/Feb/2020 19:47:08] "GET / HTTP/1.1" 200 -
+[2020-02-27 20:16:25,662][INFO|_internal.py:122] >> 190.103.203.14 - - [27/Feb/2020 20:16:25] "GET / HTTP/1.1" 200 -
+[2020-02-27 20:57:31,100][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 20:57:31] "GET / HTTP/1.1" 200 -
+[2020-02-27 20:57:34,007][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 20:57:34] "GET / HTTP/1.1" 200 -
+("@@@ {'sno': 404, 'description': '', 'image': "
+ "'https://img.youtube.com/vi/9gWVIZNeRJE/0.jpg', 'link': '', 'media': '', "
+ "'site': '', 'site_name': 'SBS 뉴스', 'title': '황교안, 텅 빈 대구 시장 "
+ '방문…"야당이지만 책임감 느껴" (현장영상) / SBS\', \'date\': \'2020-02-27 09:04:50\', '
+ "'url': "
+ "'https://news.google.com/articles/CCAiCzlnV1ZJWk5lUkpFmAEB?hl=ko&gl=KR&ceid=KR%3Ako'}")
+("@@@ {'sno': 404, 'description': '', 'image': "
+ "'https://img.youtube.com/vi/9gWVIZNeRJE/0.jpg', 'link': '', 'media': '', "
+ "'site': '', 'site_name': 'SBS 뉴스', 'title': '황교안, 텅 빈 대구 시장 "
+ '방문…"야당이지만 책임감 느껴" (현장영상) / SBS\', \'date\': \'2020-02-27 09:04:50\', '
+ "'url': "
+ "'https://news.google.com/articles/CCAiCzlnV1ZJWk5lUkpFmAEB?hl=ko&gl=KR&ceid=KR%3Ako'}")
+("@@@ {'sno': 404, 'description': '', 'image': "
+ "'https://img.youtube.com/vi/9gWVIZNeRJE/0.jpg', 'link': '', 'media': '', "
+ "'site': '', 'site_name': 'SBS 뉴스', 'title': '황교안, 텅 빈 대구 시장 "
+ '방문…"야당이지만 책임감 느껴" (현장영상) / SBS\', \'date\': \'2020-02-27 09:04:50\', '
+ "'url': "
+ "'https://news.google.com/articles/CCAiCzlnV1ZJWk5lUkpFmAEB?hl=ko&gl=KR&ceid=KR%3Ako'}")
+("@@@ {'sno': 404, 'description': '', 'image': "
+ "'https://img.youtube.com/vi/9gWVIZNeRJE/0.jpg', 'link': '', 'media': '', "
+ "'site': '', 'site_name': 'SBS 뉴스', 'title': '황교안, 텅 빈 대구 시장 "
+ '방문…"야당이지만 책임감 느껴" (현장영상) / SBS\', \'date\': \'2020-02-27 09:04:50\', '
+ "'url': "
+ "'https://news.google.com/articles/CCAiCzlnV1ZJWk5lUkpFmAEB?hl=ko&gl=KR&ceid=KR%3Ako'}")
+("@@@ {'sno': 404, 'description': '', 'image': "
+ "'https://img.youtube.com/vi/9gWVIZNeRJE/0.jpg', 'link': '', 'media': '', "
+ "'site': '', 'site_name': 'SBS 뉴스', 'title': '황교안, 텅 빈 대구 시장 "
+ '방문…"야당이지만 책임감 느껴" (현장영상) / SBS\', \'date\': \'2020-02-27 09:04:50\', '
+ "'url': "
+ "'https://news.google.com/articles/CCAiCzlnV1ZJWk5lUkpFmAEB?hl=ko&gl=KR&ceid=KR%3Ako'}")
+("@@@ {'sno': 404, 'description': '', 'image': "
+ "'https://img.youtube.com/vi/9gWVIZNeRJE/0.jpg', 'link': '', 'media': '', "
+ "'site': '', 'site_name': 'SBS 뉴스', 'title': '황교안, 텅 빈 대구 시장 "
+ '방문…"야당이지만 책임감 느껴" (현장영상) / SBS\', \'date\': \'2020-02-27 09:04:50\', '
+ "'url': "
+ "'https://news.google.com/articles/CCAiCzlnV1ZJWk5lUkpFmAEB?hl=ko&gl=KR&ceid=KR%3Ako'}")
+("@@@ {'sno': 404, 'description': '', 'image': "
+ "'https://img.youtube.com/vi/9gWVIZNeRJE/0.jpg', 'link': '', 'media': '', "
+ "'site': '', 'site_name': 'SBS 뉴스', 'title': '황교안, 텅 빈 대구 시장 "
+ '방문…"야당이지만 책임감 느껴" (현장영상) / SBS\', \'date\': \'2020-02-27 09:04:50\', '
+ "'url': "
+ "'https://news.google.com/articles/CCAiCzlnV1ZJWk5lUkpFmAEB?hl=ko&gl=KR&ceid=KR%3Ako'}")
+("@@@ {'sno': 404, 'description': '', 'image': "
+ "'https://img.youtube.com/vi/9gWVIZNeRJE/0.jpg', 'link': '', 'media': '', "
+ "'site': '', 'site_name': 'SBS 뉴스', 'title': '황교안, 텅 빈 대구 시장 "
+ '방문…"야당이지만 책임감 느껴" (현장영상) / SBS\', \'date\': \'2020-02-27 09:04:50\', '
+ "'url': "
+ "'https://news.google.com/articles/CCAiCzlnV1ZJWk5lUkpFmAEB?hl=ko&gl=KR&ceid=KR%3Ako'}")
+("@@@ {'sno': 404, 'description': '', 'image': "
+ "'https://img.youtube.com/vi/9gWVIZNeRJE/0.jpg', 'link': '', 'media': '', "
+ "'site': '', 'site_name': 'SBS 뉴스', 'title': '황교안, 텅 빈 대구 시장 "
+ '방문…"야당이지만 책임감 느껴" (현장영상) / SBS\', \'date\': \'2020-02-27 09:04:50\', '
+ "'url': "
+ "'https://news.google.com/articles/CCAiCzlnV1ZJWk5lUkpFmAEB?hl=ko&gl=KR&ceid=KR%3Ako'}")
+ * Serving Flask app "run_server" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+[2020-02-27 21:00:13,781][INFO|_internal.py:122] >>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+[2020-02-27 21:00:13,782][INFO|_internal.py:122] >>  * Restarting with stat
+[2020-02-27 21:00:15,067][WARNING|_internal.py:122] >>  * Debugger is active!
+[2020-02-27 21:00:15,068][INFO|_internal.py:122] >>  * Debugger PIN: 328-494-855
+[2020-02-27 21:00:15,183][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 21:00:15] "GET / HTTP/1.1" 200 -
+[2020-02-27 21:00:58,483][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 21:00:58] "GET /nemodeal_aos_license HTTP/1.1" 200 -
