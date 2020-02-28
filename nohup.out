@@ -1,105 +1,35 @@
-python: can't open file 'crawling.py': [Errno 2] No such file or directory
  * Serving Flask app "run_server" (lazy loading)
  * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
  * Debug mode: on
-[2020-02-27 18:46:03,760][INFO|_internal.py:122] >>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
-[2020-02-27 18:46:03,760][INFO|_internal.py:122] >>  * Restarting with stat
-[2020-02-27 18:46:05,059][WARNING|_internal.py:122] >>  * Debugger is active!
-[2020-02-27 18:46:05,060][INFO|_internal.py:122] >>  * Debugger PIN: 328-494-855
-[2020-02-27 18:46:17,506][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:46:17] "GET / HTTP/1.1" 200 -
-[2020-02-27 18:46:17,590][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:46:17] "GET /static/assets/js/vendor/popper.min.js HTTP/1.1" 200 -
-[2020-02-27 18:46:17,596][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:46:17] "GET /static/assets/js/vendor/holder.min.js HTTP/1.1" 200 -
-[2020-02-27 18:46:17,597][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:46:17] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
-[2020-02-27 18:48:57,272][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:48:57] "GET /nemodeal_aos_license HTTP/1.1" 200 -
-[2020-02-27 18:49:04,074][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:49:04] "GET /nemodeal HTTP/1.1" 200 -
-[2020-02-27 18:49:04,098][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:49:04] "GET /static/css/style.css HTTP/1.1" 200 -
-[2020-02-27 18:54:31,464][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:54:31] "GET / HTTP/1.1" 200 -
-[2020-02-27 18:54:31,500][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:54:31] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
-[2020-02-27 18:54:31,503][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:54:31] "GET /static/css/album.css HTTP/1.1" 200 -
-[2020-02-27 18:54:31,543][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:54:31] "GET /static/assets/js/vendor/popper.min.js HTTP/1.1" 200 -
-[2020-02-27 18:54:31,546][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:54:31] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
-[2020-02-27 18:54:31,549][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:54:31] "GET /static/assets/js/vendor/holder.min.js HTTP/1.1" 200 -
-[2020-02-27 18:54:32,921][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 18:54:32] "GET /favicon.ico HTTP/1.1" 404 -
-[2020-02-27 18:54:51,102][INFO|_internal.py:122] >> 183.136.213.100 - - [27/Feb/2020 18:54:51] "GET / HTTP/1.1" 200 -
-[2020-02-27 18:54:51,726][INFO|_internal.py:122] >> 183.136.213.100 - - [27/Feb/2020 18:54:51] "GET /public/index.php HTTP/1.1" 404 -
-[2020-02-27 18:54:52,745][INFO|_internal.py:122] >> 183.136.213.100 - - [27/Feb/2020 18:54:52] "GET /public/index.php HTTP/1.1" 404 -
-[2020-02-27 18:54:56,078][INFO|_internal.py:122] >> 183.136.213.100 - - [27/Feb/2020 18:54:56] "GET /public/index.php HTTP/1.1" 404 -
-[2020-02-27 18:54:57,897][INFO|_internal.py:122] >> 183.136.213.100 - - [27/Feb/2020 18:54:57] "GET /index.php HTTP/1.1" 404 -
-[2020-02-27 18:54:59,281][INFO|_internal.py:122] >> 183.136.213.100 - - [27/Feb/2020 18:54:59] "GET /index.php HTTP/1.1" 404 -
-[2020-02-27 18:54:59,661][INFO|_internal.py:122] >> 183.136.213.100 - - [27/Feb/2020 18:54:59] "GET /index.php HTTP/1.1" 404 -
-[2020-02-27 18:55:00,290][INFO|_internal.py:122] >> 183.136.213.100 - - [27/Feb/2020 18:55:00] "GET /admin/index.php HTTP/1.1" 404 -
-[2020-02-27 18:55:00,609][INFO|_internal.py:122] >> 183.136.213.100 - - [27/Feb/2020 18:55:00] "GET /admin/index.php HTTP/1.1" 404 -
-[2020-02-27 18:55:00,949][INFO|_internal.py:122] >> 183.136.213.100 - - [27/Feb/2020 18:55:00] "GET /admin/index.php HTTP/1.1" 404 -
-[2020-02-27 19:06:15,197][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 19:06:15] "GET / HTTP/1.1" 200 -
-[2020-02-27 19:26:59,440][INFO|_internal.py:122] >> 151.73.227.121 - - [27/Feb/2020 19:26:59] "GET / HTTP/1.1" 200 -
-[2020-02-27 19:47:08,468][INFO|_internal.py:122] >> 61.219.11.153 - - [27/Feb/2020 19:47:08] "GET / HTTP/1.1" 200 -
-[2020-02-27 20:16:25,662][INFO|_internal.py:122] >> 190.103.203.14 - - [27/Feb/2020 20:16:25] "GET / HTTP/1.1" 200 -
-[2020-02-27 20:57:31,100][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 20:57:31] "GET / HTTP/1.1" 200 -
-[2020-02-27 20:57:34,007][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 20:57:34] "GET / HTTP/1.1" 200 -
-("@@@ {'sno': 404, 'description': '', 'image': "
- "'https://img.youtube.com/vi/9gWVIZNeRJE/0.jpg', 'link': '', 'media': '', "
- "'site': '', 'site_name': 'SBS 뉴스', 'title': '황교안, 텅 빈 대구 시장 "
- '방문…"야당이지만 책임감 느껴" (현장영상) / SBS\', \'date\': \'2020-02-27 09:04:50\', '
- "'url': "
- "'https://news.google.com/articles/CCAiCzlnV1ZJWk5lUkpFmAEB?hl=ko&gl=KR&ceid=KR%3Ako'}")
-("@@@ {'sno': 404, 'description': '', 'image': "
- "'https://img.youtube.com/vi/9gWVIZNeRJE/0.jpg', 'link': '', 'media': '', "
- "'site': '', 'site_name': 'SBS 뉴스', 'title': '황교안, 텅 빈 대구 시장 "
- '방문…"야당이지만 책임감 느껴" (현장영상) / SBS\', \'date\': \'2020-02-27 09:04:50\', '
- "'url': "
- "'https://news.google.com/articles/CCAiCzlnV1ZJWk5lUkpFmAEB?hl=ko&gl=KR&ceid=KR%3Ako'}")
-("@@@ {'sno': 404, 'description': '', 'image': "
- "'https://img.youtube.com/vi/9gWVIZNeRJE/0.jpg', 'link': '', 'media': '', "
- "'site': '', 'site_name': 'SBS 뉴스', 'title': '황교안, 텅 빈 대구 시장 "
- '방문…"야당이지만 책임감 느껴" (현장영상) / SBS\', \'date\': \'2020-02-27 09:04:50\', '
- "'url': "
- "'https://news.google.com/articles/CCAiCzlnV1ZJWk5lUkpFmAEB?hl=ko&gl=KR&ceid=KR%3Ako'}")
-("@@@ {'sno': 404, 'description': '', 'image': "
- "'https://img.youtube.com/vi/9gWVIZNeRJE/0.jpg', 'link': '', 'media': '', "
- "'site': '', 'site_name': 'SBS 뉴스', 'title': '황교안, 텅 빈 대구 시장 "
- '방문…"야당이지만 책임감 느껴" (현장영상) / SBS\', \'date\': \'2020-02-27 09:04:50\', '
- "'url': "
- "'https://news.google.com/articles/CCAiCzlnV1ZJWk5lUkpFmAEB?hl=ko&gl=KR&ceid=KR%3Ako'}")
-("@@@ {'sno': 404, 'description': '', 'image': "
- "'https://img.youtube.com/vi/9gWVIZNeRJE/0.jpg', 'link': '', 'media': '', "
- "'site': '', 'site_name': 'SBS 뉴스', 'title': '황교안, 텅 빈 대구 시장 "
- '방문…"야당이지만 책임감 느껴" (현장영상) / SBS\', \'date\': \'2020-02-27 09:04:50\', '
- "'url': "
- "'https://news.google.com/articles/CCAiCzlnV1ZJWk5lUkpFmAEB?hl=ko&gl=KR&ceid=KR%3Ako'}")
-("@@@ {'sno': 404, 'description': '', 'image': "
- "'https://img.youtube.com/vi/9gWVIZNeRJE/0.jpg', 'link': '', 'media': '', "
- "'site': '', 'site_name': 'SBS 뉴스', 'title': '황교안, 텅 빈 대구 시장 "
- '방문…"야당이지만 책임감 느껴" (현장영상) / SBS\', \'date\': \'2020-02-27 09:04:50\', '
- "'url': "
- "'https://news.google.com/articles/CCAiCzlnV1ZJWk5lUkpFmAEB?hl=ko&gl=KR&ceid=KR%3Ako'}")
-("@@@ {'sno': 404, 'description': '', 'image': "
- "'https://img.youtube.com/vi/9gWVIZNeRJE/0.jpg', 'link': '', 'media': '', "
- "'site': '', 'site_name': 'SBS 뉴스', 'title': '황교안, 텅 빈 대구 시장 "
- '방문…"야당이지만 책임감 느껴" (현장영상) / SBS\', \'date\': \'2020-02-27 09:04:50\', '
- "'url': "
- "'https://news.google.com/articles/CCAiCzlnV1ZJWk5lUkpFmAEB?hl=ko&gl=KR&ceid=KR%3Ako'}")
-("@@@ {'sno': 404, 'description': '', 'image': "
- "'https://img.youtube.com/vi/9gWVIZNeRJE/0.jpg', 'link': '', 'media': '', "
- "'site': '', 'site_name': 'SBS 뉴스', 'title': '황교안, 텅 빈 대구 시장 "
- '방문…"야당이지만 책임감 느껴" (현장영상) / SBS\', \'date\': \'2020-02-27 09:04:50\', '
- "'url': "
- "'https://news.google.com/articles/CCAiCzlnV1ZJWk5lUkpFmAEB?hl=ko&gl=KR&ceid=KR%3Ako'}")
-("@@@ {'sno': 404, 'description': '', 'image': "
- "'https://img.youtube.com/vi/9gWVIZNeRJE/0.jpg', 'link': '', 'media': '', "
- "'site': '', 'site_name': 'SBS 뉴스', 'title': '황교안, 텅 빈 대구 시장 "
- '방문…"야당이지만 책임감 느껴" (현장영상) / SBS\', \'date\': \'2020-02-27 09:04:50\', '
- "'url': "
- "'https://news.google.com/articles/CCAiCzlnV1ZJWk5lUkpFmAEB?hl=ko&gl=KR&ceid=KR%3Ako'}")
- * Serving Flask app "run_server" (lazy loading)
- * Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
- * Debug mode: on
-[2020-02-27 21:00:13,781][INFO|_internal.py:122] >>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
-[2020-02-27 21:00:13,782][INFO|_internal.py:122] >>  * Restarting with stat
-[2020-02-27 21:00:15,067][WARNING|_internal.py:122] >>  * Debugger is active!
-[2020-02-27 21:00:15,068][INFO|_internal.py:122] >>  * Debugger PIN: 328-494-855
-[2020-02-27 21:00:15,183][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 21:00:15] "GET / HTTP/1.1" 200 -
-[2020-02-27 21:00:58,483][INFO|_internal.py:122] >> 121.166.15.230 - - [27/Feb/2020 21:00:58] "GET /nemodeal_aos_license HTTP/1.1" 200 -
+[2020-02-28 18:17:14,160][INFO|_internal.py:122] >>  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+[2020-02-28 18:17:14,161][INFO|_internal.py:122] >>  * Restarting with stat
+[2020-02-28 18:17:15,525][WARNING|_internal.py:122] >>  * Debugger is active!
+[2020-02-28 18:17:15,526][INFO|_internal.py:122] >>  * Debugger PIN: 328-494-855
+[2020-02-28 18:17:19,521][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:17:19] "GET / HTTP/1.1" 200 -
+[2020-02-28 18:17:40,279][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:17:40] "GET / HTTP/1.1" 200 -
+[2020-02-28 18:17:40,300][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:17:40] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+[2020-02-28 18:17:40,324][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:17:40] "GET /static/css/album.css HTTP/1.1" 304 -
+[2020-02-28 18:17:40,749][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:17:40] "GET /static/assets/js/vendor/popper.min.js HTTP/1.1" 304 -
+[2020-02-28 18:17:40,766][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:17:40] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+[2020-02-28 18:17:40,785][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:17:40] "GET /static/assets/js/vendor/holder.min.js HTTP/1.1" 304 -
+[2020-02-28 18:18:06,615][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:18:06] "GET / HTTP/1.1" 200 -
+[2020-02-28 18:18:06,635][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:18:06] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+[2020-02-28 18:18:06,675][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:18:06] "GET /static/css/album.css HTTP/1.1" 304 -
+[2020-02-28 18:18:06,988][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:18:06] "GET /static/assets/js/vendor/popper.min.js HTTP/1.1" 304 -
+[2020-02-28 18:18:07,005][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:18:07] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+[2020-02-28 18:18:07,024][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:18:07] "GET /static/assets/js/vendor/holder.min.js HTTP/1.1" 304 -
+[2020-02-28 18:19:09,312][INFO|_internal.py:122] >> 138.97.219.241 - - [28/Feb/2020 18:19:09] "GET / HTTP/1.1" 200 -
+[2020-02-28 18:20:08,306][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:20:08] "GET / HTTP/1.1" 200 -
+[2020-02-28 18:20:08,326][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:20:08] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+[2020-02-28 18:20:08,350][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:20:08] "GET /static/css/album.css HTTP/1.1" 304 -
+[2020-02-28 18:20:08,586][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:20:08] "GET /static/assets/js/vendor/popper.min.js HTTP/1.1" 304 -
+[2020-02-28 18:20:08,603][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:20:08] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+[2020-02-28 18:20:08,621][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:20:08] "GET /static/assets/js/vendor/holder.min.js HTTP/1.1" 304 -
+[2020-02-28 18:27:25,378][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:27:25] "GET / HTTP/1.1" 200 -
+[2020-02-28 18:27:25,402][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:27:25] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+[2020-02-28 18:27:25,448][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:27:25] "GET /static/css/album.css HTTP/1.1" 304 -
+[2020-02-28 18:27:25,773][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:27:25] "GET /static/assets/js/vendor/popper.min.js HTTP/1.1" 304 -
+[2020-02-28 18:27:25,789][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:27:25] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+[2020-02-28 18:27:25,809][INFO|_internal.py:122] >> 121.166.15.230 - - [28/Feb/2020 18:27:25] "GET /static/assets/js/vendor/holder.min.js HTTP/1.1" 304 -

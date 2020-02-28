@@ -58,6 +58,13 @@ class mySqlService:
         return result != None
 
     def selectWithDate(self, lastIndex = 0, count = 3):
+        self.con = pymysql.connect(host=preference.host, 
+                              user=preference.user, 
+                              password=preference.passwd, 
+                              db=preference.db_name, 
+                              charset='utf8')
+        self.cur = self.con.cursor()
+
         if(lastIndex == 0):
             sql = "select * from " + preference.table_name + " ORDER BY date DESC LIMIT " + str(count)
         else:
@@ -67,7 +74,7 @@ class mySqlService:
         self.cur.execute(sql)
         rows = self.cur.fetchall()
         
-        #pprint(f'fetch result {rows}')
+        pprint(f'mySqlService fetch result {rows[0]}')
         resultJson = {'status': '200', 'results': None}
         
         if(len(rows) == 0):
@@ -90,6 +97,7 @@ class mySqlService:
 						  'url': row[9]})
             i += 1
         #print(f'count {len(array)}')
+        self.con.close()
         return {'status': '200', 'results': array}
 	
     def selectAllToJson(self, count = 10):
